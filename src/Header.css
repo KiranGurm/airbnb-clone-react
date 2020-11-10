@@ -1,0 +1,46 @@
+.header{
+  display:flex; /*To display the header components in  a row */
+  justify-content: space-between; /*to give the space between the header components */
+  align-items: center;
+  position: sticky;  /*so that header sticks to top , that why top:0 */
+  top:0;
+  background-color: white;
+  z-index: 100;
+  width: 100%;
+}
+
+
+.header_icon{
+  object-fit:contain;  /*maintains aspect ratio  */
+  height: 100px;
+  margin-left: 20px;
+
+
+}
+
+.header_center{
+  display:flex;
+  flex:1;  /*It is given 1, so that search bar can take the maximum space/room in the header */
+  align-items: center;
+  max-width:fit-content;
+  padding:10px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 999px;
+}
+
+/*we don't want the input field to have that rectanglur input box => outline-width*/
+.header_center > input{
+  border:none;
+  width: 250px;
+  padding: 10px;
+  outline-width: 0;
+}
+
+.header_right{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  width:15vw;
+  margin-right: 80px;
+}
